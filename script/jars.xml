@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Gera Jars" default="grafcet-lib">
+    <target name="grafcet-lib">
+		<jar 
+			destfile="../dist/grafcet/grafcet-lib-${version}.jar"
+			basedir="../bin"/>
+    </target>
+</project>

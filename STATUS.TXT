@@ -1,0 +1,65 @@
+TODO
+----------------------------------------------------------------------
+	* definir politicas de modificao para estruturas no pacote
+	  certi.simul.grafcet
+	* documentar utilizacao
+
+Histórico
+----------------------------------------------------------------------
+
+12/11/2004
+	* fix: seta flag de desativacao de etapas antes de setar flag de 
+	  ativacao, evitando chamada do monitor na ordem errada
+	  
+8/11/2004
+	* fix: InterpretadorGrafcet: estava dando clear nos dados do ciclo
+	 após tratar transicoes, removendo novos dados validos. Agora clear
+	 eh feito apos transfomar dados num array	
+	* refactor: otimizada chamada as transicoes. Agora só avalia transicoes 
+  	  que sao válidas
+	
+05/11/2004
+	* InterpretadorGrafcet:
+		- funções do Monitor sendo chamado antes de executar operacoes, 
+		facilitando logging
+		- InterpretadorGrafcet agora passa dados do ciclo para Acoes, ou seja,
+		os métodos de ação e desacao agora suportam atributos Object[], assim
+		como as transicoes
+
+23/06/2004 
+	* criada figura para documentacao das carateristicas do ciclo de 
+ 	  ativacao de uma etapa.
+
+03/02/2004
+	* adicionado suporte a acoes continuas no grafcet 
+	  (classes do Analisador, Interpretador modificadas)
+	
+08/12/2003
+	* Monitor nao estava sendo avisado no reset()
+	* ciclo de acao deixa de ser 'transient'
+	* Classes Grafcet, Etapa e Transicao definidas com 'serialVersionUID'
+
+03/11/2003
+	* Thread do Interpretador finaliza qdo interrompida
+	* Funcao equals() implementada no Grafcet, Etapa, Transicao
+	* Criado diretorio /bin
+
+02/11/2003 - versão 0.1.3
+	* Classes Grafcet, Etapa e Transicao tornadas públicas
+	* Variáveis de estrutura da Etapa, Transicao, Grafcet marcadas como final e
+	  construtores modificados
+	* Construtor de Grafcet nao aceita mais parametro 'etapasInicias',
+	  que ja sao setadas na classe Etapa
+	* Fucao obterEtapasInicias removida de Grafcet
+	* Variaveis do tipo 'Method' tornadas 'transient' por causa da Serializacao
+
+25/11/2003 - versao 0.1.2
+	* definida a interface de monitoramento 'MonitorGrafcet'
+	* Classe Interpretador Grafcet modificada para notificar o monitor Grafcet
+
+10/11/2003 - versao 0.1.1
+	* bug: nao estava limpando dados ao fim de um passo
+
+13/10/2003
+	* Implementacao das classes e funcionalidades do pacote
+	  certi.simul.grafcet
