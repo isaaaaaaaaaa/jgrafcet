@@ -1,0 +1,28 @@
+String s = "transicao_N_1_3_EA_1_EP_2";
+StringTokenizer st = new StringTokenizer(s.replaceFirst("transicao_", ""), "N EA EP");
+
+//if (st.countTokens() == 3)
+  
+StringTokenizer stN = new StringTokenizer(st.nextToken(), "_");	
+
+"2_32_23".split("_");(java.lang.String[]) [2, 32, 23](java.lang.String[]) [2]
+
+	
+java.lang.reflect.Method[] mets = testes.UmGrafcet.class.getMethods();
+for (int i = 0; i < mets.length; i++) {
+	for (int j = 0; j < mets[i].getParameterTypes().length; i++) {
+		System.out.println(mets[i].getParameterTypes()[j].toString());
+	} 
+}
+
+certi.simul.grafcet.PrototipoGrafcet proto = new UmGrafcet();
+certi.simul.grafcet.AnalisadorGrafcet anal = 
+	new certi.simul.grafcet.AnalisadorGrafcet(proto);
+anal.validar();
+anal.obterGrafcet();
+
+java.io.ObjectOutputStream os = 
+	new java.io.ObjectOutputStream(new java.io.FileOutputStream("c:\\fos.txt"));
+os.writeObject(anal.obterGrafcet());
+os.flush();
+os.close();
