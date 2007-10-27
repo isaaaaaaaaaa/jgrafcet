@@ -1,11 +1,19 @@
 TODO
 ----------------------------------------------------------------------
-	* definir politicas de modificao para estruturas no pacote
-	  certi.simul.grafcet
-	* documentar utilizacao
+	* documentation: users guide
+	* translation to english
 
-Histórico
+History
 ----------------------------------------------------------------------
+
+
+27/10/2007
+    * First commit to google code. 
+    
+    
+
+-------------------
+
 
 12/11/2004
 	* fix: seta flag de desativacao de etapas antes de setar flag de 
